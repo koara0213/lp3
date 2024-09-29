@@ -46,8 +46,8 @@
         <img src="assets/image/KBL_logo_pink.png" alt="KBL Logo">
       </div>
       <nav class="header__navigation">
-        <a href="#" class="header__link">お問い合わせ</a>
-        <a href="#" class="header__link header__link--green">カウンセリング予約（無料）</a>
+        <a href="#" class="header__link"><p>お問い合わせ<i class="bi bi-chevron-right"></i></p></a>
+        <a href="#" class="header__link--green"><span>カウンセリング予約<span class="header__link--small">(無料)</span><i class="bi bi-chevron-right"></i></span></a>
       </nav>
     </header>
 
@@ -70,32 +70,52 @@
             <span class="cover__campaign--price--small">円</span>
           </div>
         </div>
-        <p class="cover__price">2,480円/月</p>
-        <ul class="cover__list">
-          <li>通い放題</li>
-          <li>追加料金なし</li>
-          <li>安心サポート</li>
-        </ul>
+        <span class="cover__price">2,480<span class="cover__price--unit">円／月</span></span>
+        <div class="cover--list__content">
+          <ul class="cover__list">
+            <li>通い放題</li>
+            <li>追加料金なし</li>
+            <li>安心サポート</li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <!-- Present Section -->
     <div class="present__container">
-      <div class="present__catch">今だけ！</div>
+      <div class="present__catch">今だけ!</div>
       <div class="present__box">
         <div class="present__title">フェイシャルコース</div>
         <div class="present__content"><span class="present__number">3</span>回プレゼント！</div>
       </div>
+      <div class="present__subcontent">クレンジング/洗顔/フェイスヒーリング/整肌</div>
     </div>
 
     <!-- Reservation Section -->
+    <div class="cta-section">
+      <p class="cta-text">無料体験実施中！</p>
+      <a href="#" class="cta-button">カウンセリング予約<br>はこちら（無料）</a>
+    </div>
+     <!-- Trial Section -->
+     <div class="trial__container">
+      <div class="trial__title">無料体験内容</div>
+      <div class="trial__content">
+        <p>〈脱毛体験〉V<span class="trial__content--unit">(10分) or</span> 両脇<span class="trial__content--unit">(10分)</span></p>
+        <p>〈美顔体験〉フェイシャルトリートメント<span class="trial__content--unit">(40分コース1回)</span></p>
+      </div>
+    </div>
 
-    <!-- FreeTrial Section -->
     <!-- Points Section -->
     <div class="points-section">
-      <h2 class="points-title">KIRAMEKI BEAUTY LABOが選ばれる<br>3つのポイント</h2>
-      <img src="assets/image/star_img_left.png" alt="star left" class="points__star--left">
-      <img src="assets/image/star_img_right.png" alt="star right" class="points__star--right">
+      <div class="points-title">
+        <img src="assets/image/KBL_logo_brown.png" alt="KBL Logo" class="points-title__logo">
+        <span>が選ばれる</span>
+      </div>
+      <div class="points__subtitle">
+        <img src="assets/image/star_img_left.png" alt="" class="points__star--left">
+        <p>3つのポイント</p>
+        <img src="assets/image/star_img_right.png" alt="" class="points__star--right">
+      </div>
 
       <div class="point-box">
         <div class="point-header">
@@ -173,19 +193,24 @@
     </div>
 
     <!-- Trial Section -->
-    <div class="trial-section">
-      <h2 class="trial-title">無料体験内容</h2>
-      <div class="trial-content">
-        <p><strong>〈脱毛体験〉</strong>V(10分) or 両脇(10分)</p>
-        <p><strong>〈美顔体験〉</strong>フェイシャルトリートメント(40分コース1回)</p>
+    <div class="trial__container">
+      <div class="trial__title">無料体験内容</div>
+      <div class="trial__content">
+        <p>〈脱毛体験〉V<span class="trial__content--unit">(10分) or</span> 両脇<span class="trial__content--unit">(10分)</span></p>
+        <p>〈美顔体験〉フェイシャルトリートメント<span class="trial__content--unit">(40分コース1回)</span></p>
       </div>
     </div>
 
     <!-- AnotherCouse Section -->
     <div class="AnotherCouse-section">
-      <h2 class="AnotherCouse-title">ほかにも選べる！<br><span>2つのコース</span></h2>
-      <img src="assets/image/star_img_left.png" alt="star left" class="AnotherCouse__star--left">
-      <img src="assets/image/star_img_right.png" alt="star right" class="AnotherCouse__star--right">
+      <div class="AnotherCouse__container">
+        <h2 class="AnotherCouse__subtitle">ほかにも選べる！</h2>
+        <div class="AnotherCouse__title">
+          <img src="assets/image/star_img_left.png" alt="star left" class="AnotherCouse__star--left">
+          <p>2つのコース</p>
+          <img src="assets/image/star_img_right.png" alt="star right" class="AnotherCouse__star--right">
+        </div>
+      </div>
       <div class="AnotherCouse-container">
         <!-- ボディコース -->
         <div class="course-box">
@@ -205,93 +230,92 @@
 
     <!-- CustomerVoices Section -->
     <div class="customer-voice">
-      <h2 class="customer-voice__title">
-        お客様の声
+      <div class="AnotherCouse__title">
         <img src="assets/image/star_img_left.png" alt="star left" class="customer-voice__star--left">
+        <h2 class="customer-voice__title">お客様の声</h2>
         <img src="assets/image/star_img_right.png" alt="star right" class="customer-voice__star--right">
-      </h2>
-
+      </div>
       <div class="customer-voice__slider">
         <div class="customer-voice__slide">
-          <img src="assets/image/voice_NT.png" alt="フェイシャルコースのお客様" class="customer-voice__image">
           <div class="customer-voice__content">
             <h3 class="customer-voice__course">フェイシャルコース</h3>
             <p class="customer-voice__name">20代R.Bさま/大学生</p>
             <p class="customer-voice__comment">ここにコピーが入ります。</p>
           </div>
+          <img src="assets/image/voice_NT.png" alt="フェイシャルコースのお客様" class="customer-voice__image">
         </div>
 
         <div class="customer-voice__slide">
-          <img src="assets/image/voice_RB.png" alt="脱毛コースのお客様" class="customer-voice__image">
           <div class="customer-voice__content">
             <h3 class="customer-voice__course">脱毛コース</h3>
             <p class="customer-voice__name">30代N.Tさま/会社員</p>
             <p class="customer-voice__comment">納得いくまで何度も、追加料金なく安心して通うことができて大変満足しています。</p>
           </div>
+          <img src="assets/image/voice_RB.png" alt="脱毛コースのお客様" class="customer-voice__image">
         </div>
 
         <div class="customer-voice__slide">
-          <img src="assets/image/voice_YK.png" alt="ボディコースのお客様" class="customer-voice__image">
           <div class="customer-voice__content">
             <h3 class="customer-voice__course">ボディコース</h3>
             <p class="customer-voice__name">20代Y.Kさま/会社員</p>
             <p class="customer-voice__comment">ここにコピーが入ります。</p>
           </div>
+          <img src="assets/image/voice_YK.png" alt="ボディコースのお客様" class="customer-voice__image">
         </div>
+
         <div class="customer-voice__slide">
-          <img src="assets/image/voice_NT.png" alt="フェイシャルコースのお客様" class="customer-voice__image">
           <div class="customer-voice__content">
-            <h3 class="customer-voice__course">フェイシャルコース２</h3>
+            <h3 class="customer-voice__course">フェイシャルコース2</h3>
             <p class="customer-voice__name">20代R.Bさま/大学生</p>
             <p class="customer-voice__comment">ここにコピーが入ります。</p>
           </div>
+          <img src="assets/image/voice_NT.png" alt="フェイシャルコースのお客様" class="customer-voice__image">
         </div>
 
         <div class="customer-voice__slide">
-          <img src="assets/image/voice_RB.png" alt="脱毛コースのお客様" class="customer-voice__image">
           <div class="customer-voice__content">
-            <h3 class="customer-voice__course">脱毛コース２</h3>
+            <h3 class="customer-voice__course">脱毛コース2</h3>
             <p class="customer-voice__name">30代N.Tさま/会社員</p>
             <p class="customer-voice__comment">納得いくまで何度も、追加料金なく安心して通うことができて大変満足しています。</p>
           </div>
+          <img src="assets/image/voice_RB.png" alt="脱毛コースのお客様" class="customer-voice__image">
         </div>
 
         <div class="customer-voice__slide">
-          <img src="assets/image/voice_YK.png" alt="ボディコースのお客様" class="customer-voice__image">
           <div class="customer-voice__content">
-            <h3 class="customer-voice__course">ボディコース２</h3>
+            <h3 class="customer-voice__course">ボディコース2</h3>
             <p class="customer-voice__name">20代Y.Kさま/会社員</p>
             <p class="customer-voice__comment">ここにコピーが入ります。</p>
           </div>
+          <img src="assets/image/voice_YK.png" alt="ボディコースのお客様" class="customer-voice__image">
         </div>
 
         <div class="customer-voice__slide">
-          <img src="assets/image/voice_NT.png" alt="フェイシャルコースのお客様" class="customer-voice__image">
           <div class="customer-voice__content">
-            <h3 class="customer-voice__course">フェイシャルコース３</h3>
+            <h3 class="customer-voice__course">フェイシャルコース3</h3>
             <p class="customer-voice__name">20代R.Bさま/大学生</p>
             <p class="customer-voice__comment">ここにコピーが入ります。</p>
           </div>
+          <img src="assets/image/voice_NT.png" alt="フェイシャルコースのお客様" class="customer-voice__image">
         </div>
 
         <div class="customer-voice__slide">
-          <img src="assets/image/voice_RB.png" alt="脱毛コースのお客様" class="customer-voice__image">
           <div class="customer-voice__content">
-            <h3 class="customer-voice__course">脱毛コース３</h3>
+            <h3 class="customer-voice__course">脱毛コース3</h3>
             <p class="customer-voice__name">30代N.Tさま/会社員</p>
             <p class="customer-voice__comment">納得いくまで何度も、追加料金なく安心して通うことができて大変満足しています。</p>
           </div>
+          <img src="assets/image/voice_RB.png" alt="脱毛コースのお客様" class="customer-voice__image">
         </div>
 
         <div class="customer-voice__slide">
-          <img src="assets/image/voice_YK.png" alt="ボディコースのお客様" class="customer-voice__image">
           <div class="customer-voice__content">
-            <h3 class="customer-voice__course">ボディコース３</h3>
+            <h3 class="customer-voice__course">ボディコース3</h3>
             <p class="customer-voice__name">20代Y.Kさま/会社員</p>
             <p class="customer-voice__comment">ここにコピーが入ります。</p>
           </div>
+          <img src="assets/image/voice_YK.png" alt="ボディコースのお客様" class="customer-voice__image">
         </div>
-
       </div>
 
       <!-- Dots for pagination -->

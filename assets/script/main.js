@@ -61,3 +61,26 @@ $('.qa__item').on('click', function() {
       });
     }
   });
+
+// CustomerVoices Section
+  $(document).ready(function(){
+    $('.customer-voice__slider').slick({
+      infinite: true,
+      slidesToShow: 1,  // SP版で1枚表示
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false,
+      centerMode: true,  // SP版で中央表示とサイドに少し表示
+      centerPadding: '30px',  // 左右に少し表示
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,  // PC版で3枚表示
+            slidesToScroll: 1,
+            centerMode: false
+          }
+        }
+      ]
+    });
+  });
