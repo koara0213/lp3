@@ -1,0 +1,1094 @@
+/* Global page styles
+------------------------------------------ */
+body {
+  font-family: "Noto Sans JP";
+  line-height: 1;
+  color: #000;
+  align-items: flex-start;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+/* Header Section
+------------------------------------------ */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header__logo{
+  margin-left: 1%;
+}
+
+.header__logo img {
+    height: 40px; /* ロゴの高さ調整 */
+}
+
+.header__navigation {
+    display: flex;
+    gap: 10px;
+    margin-left: 4%;
+}
+
+.header__link {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #fa7da3;
+    border-radius: 25px;
+    font-size: 12px;
+}
+
+.header__link--green {
+    background-color: #49c43d;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header__navigation {
+        flex-direction: row;
+        width: auto; /* PC表示では横並びに戻す */
+    }
+}
+
+/*  Cover Section
+------------------------------------------ */
+.cover__container {
+  display: flex;
+  background-image: url(../image/mainVisual_sp.png);
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 32%;
+}
+
+@media (min-width: 768px) {
+  .cover__container {
+      background-image: url(../image/mainVisual_pc.png);
+      background-position: center right;
+      padding-bottom: 40%;
+      margin: auto;
+  }
+}
+
+.cover__title--box {
+  display: flex;
+  flex-direction: column;
+}
+
+.cover__title--box {
+  display: flex;
+  flex-direction: column;
+  width: 52%;
+  text-align: center;
+  padding-top: 25px;
+  padding-left: 1px;
+  letter-spacing: 2px;
+}
+
+.cover__title {
+  font-size: 40px;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .cover__title {
+      font-size: 122px;
+  }
+}
+
+.cover__subtitle {
+  display: flex;
+  font-size: 18px;
+  flex-direction: column;
+  letter-spacing: normal;
+  color: #fff;
+  padding-top: 7px;
+  padding-left: 17px;
+}
+
+@media (min-width: 768px) {
+  .cover__subtitle {
+      font-size: 36px;
+  }
+}
+
+.cover__content {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.cover__campaign {
+  display: flex;
+  font-size: 36px;
+  color: #FF69B4;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.25) 3.54px 3.54px 0;
+  padding-bottom: 16px;
+}
+
+.cover__campaign--1 {
+display: flex;
+flex-direction: column;
+padding-top: 19px;
+}
+
+.cover__limited {
+  font-size: 13px;
+  color: #FF69B4;
+  font-weight: 700;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.cover__first-month {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  margin-left: 27px;
+  margin-top: 17px;
+}
+
+.cover__campaign--2 {
+  display: flex;
+  margin-left: 8px;
+  padding-top: 20px;
+}
+
+.cover__campaign--price {
+  font-size: 71px;
+  font-weight: 700;
+  color: #fffd7a;
+}
+
+.cover__campaign--price--small {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fffd7a;
+  margin-top: 33px;
+}
+
+.cover__price{
+  margin-top: 11px;
+  text-align: end;
+  font-size: 13px;
+  margin-right: 20px;
+  color: #FFF;
+  font-weight: 500;
+}
+
+.cover__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cover__list li {
+  border: solid 1px #fff;
+  color: #fff;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+}
+
+@media (min-width: 768px) {
+  .cover__title {
+      font-size: 28px;
+      top: 15%;
+      left: 5%;
+  }
+
+  .cover__price {
+      font-size: 76px;
+      color: #fff;
+  }
+
+  .cover__description {
+      font-size: 24px;
+  }
+
+  .cover__list li {
+      font-size: 20px;
+  }
+}
+
+/* Present Section
+------------------------------------------ */
+.present__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+  background-color: #fffedd;
+}
+
+@media (min-width: 768px) {
+  .present__container {
+    padding-top: 14px;
+    margin-bottom: 31px;
+  }
+}
+
+.present__catch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+  font-size: 24px;
+  color: #000;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .present__catch {
+    font-size: 36px;
+    padding-top: 14px;
+    margin-bottom: 31px;
+  }
+}
+
+.present__box {
+  border: solid 1px #fa7da3;
+  border-radius: 10px;
+  width: calc(100% - 32px);
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .present__box {
+    margin-bottom: 19px;
+  }
+}
+
+.present__title {
+  display: flex;
+  background-color: #fa7da3;
+  border-radius: 9px 9px 0 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  justify-content: center;
+  font-size: 21px;
+}
+
+@media (min-width: 768px) {
+  .present__title {
+    align-items: center;
+  }
+}
+
+.present__content {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fa7da3;
+  font-size: 27px;
+}
+
+@media (min-width: 768px) {
+  .present__content {
+    font-size: 44px;
+  }
+}
+
+.present__number {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .present__number {
+    font-size: 68px;
+  }
+}
+
+/*  Actions Section
+------------------------------------------ */
+.actions__container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: calc(100% - 32px);
+background-color: #F0F4FF;
+margin: auto;
+padding-bottom: 34px;
+}
+
+@media (max-width: 1001px) {
+.actions__container {
+  flex-direction: row;
+  max-width: 1000px;
+  width: 100%;
+  height: 146px;
+  align-items: center;
+  padding: 0px 35px 0px 0px;
+}
+}
+
+.actions__product {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin: 0 auto;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+@media (max-width: 1001px) {
+.actions__product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  width: calc(100% / 3);
+}
+}
+
+.actions__product-name {
+display: flex;
+justify-content: center;
+font-size: 18px;
+font-weight: 500;
+letter-spacing: 1.5px;
+padding-top: 5px;
+}
+
+@media (max-width: 1001px) {
+.actions__product-name {
+  margin: auto;
+  font-size: 24px;
+  letter-spacing: 2.2px;
+  margin-left: 48px;
+  margin-top: 2px;
+}
+}
+
+.actions__product-price {
+display: flex;
+justify-content: center;
+font-size: 14px;
+letter-spacing: 1.2px;
+padding-top: 11px;
+}
+
+@media (max-width: 1001px) {
+.actions__product-price {
+  font-size: 15px;
+  justify-content: left;
+  padding-top: 19px;
+  letter-spacing: 2px;
+  padding-left: 47px;
+}
+}
+
+.actions__link {
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+padding-top: 2px;
+padding-bottom: 20px;
+}
+
+@media (max-width: 1001px) {
+.actions__link {
+  width: calc(100% /3);
+  border-radius: unset;
+  background: unset;
+  margin: 0 auto;
+  margin-top: 4px;
+  margin-right: 0px;
+  padding: 0px 0px 0px 0px;
+  padding-right: 23px;
+}
+}
+
+.actions__link-text {
+font-weight: 700;
+font-size: 18px;
+text-align: center;
+color: #fff;
+padding-top: 20px;
+padding-bottom: 20px;
+background: #46C4DB;
+border-radius: 29px;
+width: 300px;
+}
+
+@media (max-width: 1001px) {
+.actions__link-text {
+  color: #fff;
+  background: #46C4DB;
+  border-radius: 29px;
+  margin: 20px 0px;
+  padding: 19px 60px;
+}
+}
+
+.actions__form {
+margin: 0 auto;
+}
+
+@media (max-width: 1001px) {
+.actions__form {
+  width: calc(100% / 3);
+  padding-top: unset;
+  padding-bottom: unset;
+  background: unset;
+  border-radius: unset;
+}
+}
+
+.actions__form form{
+display: flex;
+align-items: center;
+justify-content: center;
+background: #5DD5AB;
+border-radius: 29px;
+width: 300px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+@media (max-width: 1001px) {
+.actions__form form{
+  background-color: #5DD5AB;
+  border-radius: 29px;
+  margin: 20px 0px;
+  padding: 19px 117px 19px 110px;
+  margin-top: 27px;
+}
+}
+
+.actions__form-button {
+font-weight: 700;
+font-size: 18px;
+text-align: center;
+color: #fff;
+}
+
+@media (max-width: 1001px) {
+.actions__link:hover, .actions__form:hover {
+  opacity: 0.6;
+}
+}
+
+.product__container {
+background-image: url(../image/subVIsual_sp.png);
+background-size: cover;
+background-position: right center;
+background-repeat: no-repeat;
+text-align: center;
+width: 100%;
+height: 680px;
+margin-top: 13%;
+}
+
+
+@media (max-width: 768px) {
+.product__container {
+  height: 550px;
+  display: flex;
+  background-image: url(../image/subVisual_pc.png);
+  background-size: cover;
+  background-position: 35% center;
+  background-repeat: no-repeat;
+  aspect-ratio: 30 / 11;
+  align-items: center;
+  margin-top: 50px;
+}
+}
+
+.product__content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 18px;
+}
+
+@media (max-width: 768px) {
+.product__content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+}
+}
+
+.product__box {
+width: calc(100% - 32px);
+margin: auto;
+}
+
+@media (max-width: 768px) {
+.product__box {
+  width: 450px;
+  margin: unset;
+  padding-right: 20px;
+  margin-right: 14.5%;
+  padding-top: 10px;
+}
+}
+
+.product__title {
+font-family: EB Garamond;
+font-size: 30px;
+font-weight: 700;
+text-align: center;
+color: #fff;
+margin-top: 14%;
+}
+
+
+@media (max-width: 768px) {
+.product__title {
+  font-family: EB Garamond;
+  font-weight: 700;
+  font-size: 38px;
+  color: #fff;
+  text-align: left;
+  margin-top: 0;
+}
+}
+
+
+.product__subtitle {
+font-weight: 500;
+font-size: 24px;
+color: #fff;
+text-align: left;
+margin-top: 19px;
+text-align: center;
+}
+
+@media (max-width: 768px) {
+.product__subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  margin-top: 18px;
+  text-align: left;
+}
+}
+
+.product__text {
+font-size: 14px;
+color: #fff;
+margin-top: 5.5%;
+line-height: 31.8px;
+text-align: left;
+}
+
+@media (max-width: 768px) {
+.product__text {
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+  line-height: 2.29;
+}
+}
+
+/* Reservation Section
+------------------------------------------ */
+/* セクション全体のスタイル */
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* テキストのスタイル */
+.cta-text {
+    color: #FF69B4; /* ピンクの文字色 */
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* ボタンのスタイル */
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #49c43d; /* 緑の背景 */
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* ボタンのホバースタイル */
+.cta-button:hover {
+    background-color: #40e021; /* ホバー時の色変更 */
+}
+
+@media (min-width: 768px) {
+    .cta-section {
+        padding: 40px;
+    }
+
+    .cta-text {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        font-size: 20px;
+        padding: 16px 32px;
+    }
+}
+
+/* Trial Section
+------------------------------------------ */
+
+/* セクション全体のスタイル */
+.trial-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 2px solid #87CEEB; /* 上の青線 */
+    border-bottom: 2px solid #87CEEB; /* 下の青線 */
+}
+
+/* タイトルのスタイル */
+.trial-title {
+    color: #00BFFF; /* 水色の文字 */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* コンテンツのスタイル */
+.trial-content p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* モバイル対応のレスポンシブデザイン */
+@media (min-width: 768px) {
+    .trial-title {
+        font-size: 28px;
+    }
+
+    .trial-content p {
+        font-size: 18px;
+    }
+}
+
+/* Points Section
+------------------------------------------ */
+/* セクション全体 */
+.points-section {
+  text-align: center;
+  background-color: #fdf1f5;
+  padding: 20px;
+}
+
+/* タイトル */
+.points-title {
+  font-size: 20px;
+  color: #8b4513; /* 濃いブラウン */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.points__star--left, .points__star--right {
+  width: 20px;
+  position: absolute;
+  top: 0;
+}
+
+.points__star--left {
+  left: -25px;
+}
+
+.points__star--right {
+  right: -25px;
+}
+
+/* 各ポイントのコンテナ */
+.point-box {
+  border: 2px solid #ffb6c1;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ポイントのヘッダー */
+.point-header {
+  background-color: #ffb6c1;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.point-title {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.point-description {
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* 全身プラン */
+.full-body-plan {
+  margin-bottom: 20px;
+}
+
+.plan-title {
+  font-size: 16px;
+  color: #ff69b4;
+  margin-bottom: 10px;
+}
+
+.plan-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 部分脱毛プラン */
+.partial-hair-removal {
+  margin-bottom: 20px;
+}
+
+.partial-hair-removal-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.partial-hair-removal-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.partial-hair-removal-list li img {
+  width: 100%;
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.partial-hair-removal-list li p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* ポイントのオプション */
+.point-content {
+  display: flex;
+  flex-direction: column; /* SPでは縦並び */
+  gap: 20px;
+}
+
+.point-option {
+  border: 1px solid #ffb6c1;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.point-option img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.point-option p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* レスポンシブ設定 (PC表示用) */
+@media (min-width: 768px) {
+  .points-title {
+      font-size: 24px;
+  }
+
+  .point-content {
+      flex-direction: row; /* PCでは横並び */
+      justify-content: center;
+  }
+
+  .point-option {
+      width: 40%; /* PC表示でのオプションの幅を調整 */
+  }
+
+  .partial-hair-removal-list li {
+      width: 15%; /* 6つ横並びに対応 */
+  }
+
+  .plan-title {
+      font-size: 18px;
+  }
+
+  .point-title {
+      font-size: 20px;
+  }
+
+  .point-description {
+      font-size: 16px;
+  }
+}
+
+/* AnotherCouse Section
+------------------------------------------ */
+/* セクション全体 */
+.AnotherCouse-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* タイトル */
+.AnotherCouse-title {
+  font-size: 24px;
+  color: #FF69B4; /* ピンク色 */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.AnotherCouse-title span {
+  font-size: 28px;
+  display: block;
+  margin-top: 5px;
+}
+
+.AnotherCouse__star--left, .AnotherCouse__star--right {
+  width: 20px;
+  position: absolute;
+  top: 0;
+}
+
+.AnotherCouse__star--left {
+  left: -25px;
+}
+
+.AnotherCouse__star--right {
+  right: -25px;
+}
+
+/* コースコンテナ */
+.AnotherCouse-container {
+  display: flex;
+  flex-direction: column; /* デフォルトで縦並び (SP用) */
+  gap: 20px;
+}
+
+/* 各コースのボックス */
+.course-box {
+  border: 2px solid #FFB6C1;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* コースのタイトル */
+.course-title {
+  font-size: 20px;
+  color: #FF69B4;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* コースの説明文 */
+.course-description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* コースの画像 */
+.course-image {
+  width: 100%;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+/* レスポンシブ設定 (PC表示用) */
+@media (min-width: 768px) {
+  .AnotherCouse-container {
+      flex-direction: row; /* PCでは横並び */
+      justify-content: center;
+      gap: 40px;
+  }
+
+  .course-box {
+      width: 45%; /* PC表示で各コースの幅を調整 */
+  }
+
+  .course-image {
+      max-width: 100%;
+  }
+
+  .AnotherCouse-title {
+      font-size: 32px;
+  }
+
+  .AnotherCouse-title span {
+      font-size: 36px;
+  }
+}
+
+/* CustomerVoices Section
+------------------------------------------ */
+/* メインのスタイル */
+.customer-voice {
+  text-align: center;
+  padding: 20px;
+  background-color: #fbeff5;
+}
+
+.customer-voice__title {
+  font-size: 24px;
+  color: #ff66a1;
+  position: relative;
+}
+
+.customer-voice__star--left, .customer-voice__star--right {
+  width: 20px;
+  position: absolute;
+  top: 0;
+}
+
+.customer-voice__star--left {
+  left: -25px;
+}
+
+.customer-voice__star--right {
+  right: -25px;
+}
+
+.customer-voice__slider {
+  margin-top: 20px;
+}
+
+.customer-voice__slide {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ff66a1;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.customer-voice__image {
+  width: 100px;
+  float: left;
+  margin-right: 15px;
+}
+
+.customer-voice__content {
+  overflow: hidden;
+}
+
+.customer-voice__course {
+  font-size: 18px;
+  color: #ff66a1;
+}
+
+.customer-voice__name, .customer-voice__comment {
+  font-size: 14px;
+}
+
+/* レスポンシブ設定 */
+@media (min-width: 768px) {
+  .customer-voice__slider {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .customer-voice__slide {
+    width: 30%;
+    display: inline-block;
+  }
+
+  .customer-voice__image {
+    width: 120px;
+  }
+
+  .customer-voice__title {
+    font-size: 36px;
+  }
+
+  .customer-voice__star--left {
+    width: 30px;
+    left: -35px;
+  }
+
+  .customer-voice__star--right {
+    width: 30px;
+    right: -35px;
+  }
+}
+
+/* Footer Section
+------------------------------------------ */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px 20px 30px 20px;
+  background-color: #fa7da3;
+  }
+
+  @media (min-width: 768px) {
+   .footer {
+     flex-direction: row;
+     padding: 39px 70px 40px 104px;
+   }
+  }
+
+  .footer__logo {
+  width: 30%;
+  }
+
+  @media (min-width: 768px) {
+   .footer__logo {
+     margin-bottom: 0;
+     width: 20%;
+   }
+  }
