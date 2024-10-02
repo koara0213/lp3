@@ -12,6 +12,8 @@ $(document).ready(function(){
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: true, // スマホでも中央配置
+          centerPadding: '40px' // スマホでも左右のスライドを表示
         }
       }
     ]
