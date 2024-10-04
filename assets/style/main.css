@@ -139,7 +139,7 @@ li {
 .cover {
   display: flex;
   background-image: url(../image/mainVisual_sp.png);
-  background-size: contain;
+  background-size: cover;
   background-position-y: bottom;
   width: 100%;
   padding-bottom: 5%;
@@ -270,7 +270,6 @@ li {
   .cover {
     background-image: url(../image/mainVisual_pc.png);
     background-color: #fa7da3;
-    background-position: left;
     padding-bottom: 3.5%;
     margin: 0 auto;
     padding-top: 6.5%;
@@ -283,13 +282,17 @@ li {
   }
 
   .cover__main {
+    display:flex;
+    justify-content: end;;
     font-size: 119px;
     padding: 0px 12px;
   }
 
   .cover__sub {
+    justify-content: end;
+    flex-direction; row;
     font-size: 33px;
-    padding: 6px 0px 10px 6px;
+    padding: 19px 14px 10px 10px;
   }
 
   .cover__body {
@@ -298,7 +301,7 @@ li {
 
   .cover__deal {
     margin-left: 5%;
-    padding-bottom: 4%;
+    padding-bottom: 6%;
   }
 
   .cover__deal-limited {
@@ -322,21 +325,21 @@ li {
 
   .cover__deal-price {
     margin-left: 8px;
-    padding-top: 20px;
+    padding-top: 10px;
   }
 
   .cover__price {
-    font-size: 155px;
+    font-size: 170px;
     font-weight: 600;
-    padding-top: 16px;
-    padding-left: 10px;
+    padding-top: 0px;
+    padding-left: 12px;
   }
 
   .cover__price-unit {
     font-size: 78px;
     font-weight: 700;
     margin-top: 82px;
-    padding-right: 47px;
+    padding-right: 53px;
   }
 
   .cover__total {
