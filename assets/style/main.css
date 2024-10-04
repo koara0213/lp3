@@ -99,6 +99,11 @@ li {
   .header__link {
     padding: 16px 20px;
     font-size: 21px;
+    transition: opacity 0.3s ease;
+  }
+
+  .header__link:hover {
+    opacity: 0.8;
   }
 
   .header__link i {
@@ -120,6 +125,11 @@ li {
     padding: 15px 12px;
     font-size: 20px;
     align-content: center;
+    transition: opacity 0.3s ease;
+  }
+
+  .header__link--green:hover {
+    opacity: 0.8;
   }
 }
 
@@ -147,12 +157,14 @@ li {
 
 .cover__main {
   font-size: 40px;
+  font-weight: 400;
   color: #fff;
 }
 
 .cover__sub {
   display: flex;
   font-size: 18px;
+  font-weight: 400;
   flex-direction: column;
   letter-spacing: normal;
   color: #fff;
@@ -196,7 +208,6 @@ li {
 .cover__first {
   font-size: 24px;
   color: #fff;
-  font-weight: 700;
   margin-left: 27px;
   margin-top: 10px;
 }
@@ -374,10 +385,14 @@ li {
   flex-direction: column;
   align-items: center;
   margin-bottom: 18px;
-  font-size: 20px;
-  color: #fa7da3;
   position: relative;
   padding-left: 15px;
+}
+
+.present__catch--title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fa7da3;
 }
 
 .present__catch::before,
@@ -413,6 +428,7 @@ li {
   color: #fff;
   justify-content: center;
   font-size: 21px;
+  font-weight: 400;
 }
 
 .present__content {
@@ -441,7 +457,7 @@ li {
     margin-bottom: 10px;
   }
 
-  .present__catch {
+  .present__catch--title {
     font-size: 35px;
     padding-top: 9px;
     margin-bottom: 23px;
@@ -512,6 +528,7 @@ li {
 .reservation__text {
   color: #FF69B4;
   font-size: 21px;
+  font-weight: 500;
   margin-bottom: 10px;
   letter-spacing: 2.8px;
 }
@@ -565,10 +582,13 @@ li {
   background-color: #fff;
   border-top: 1px solid #50bfff;
   border-bottom: 1px solid #50bfff;
+  margin-bottom: 20px;
+}
+
+.trial__title h2 {
   color: #50bfff;
   font-size: 17px;
   font-weight: 600;
-  margin-bottom: 20px;
 }
 
 .trial__content {
@@ -576,6 +596,18 @@ li {
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 30px;
+}
+
+.trial__content h3 {
+  display: inline;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.trial__content p {
+  display: inline;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .trial__content-unit {
