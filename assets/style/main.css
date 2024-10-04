@@ -86,10 +86,11 @@ li {
     padding: 20px 20px;
     gap: 30%;
     margin-right: 20px;
+    justify-content: flex-start;
   }
 
   .header__logo {
-    margin-left: 2%;
+    margin-left: 13.5%;
   }
 
   .header__logo img {
@@ -117,12 +118,12 @@ li {
   .header__navigation {
     flex-direction: row;
     width: auto;
-    gap: 20px;
+    gap: 13px;
     padding-left: 10px;
   }
 
   .header__link--green {
-    padding: 15px 12px;
+    padding: 15px 0px 15px 25px;
     font-size: 20px;
     align-content: center;
     transition: opacity 0.3s ease;
