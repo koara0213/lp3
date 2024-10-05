@@ -1,6 +1,6 @@
 // CustomerVoices Section
 $(document).ready(function(){
-  $('.customer--voice__slider').slick({
+  $('.customer__slider').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -12,8 +12,8 @@ $(document).ready(function(){
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: true, // スマホでも中央配置
-          centerPadding: '40px' // スマホでも左右のスライドを表示
+          centerMode: true,
+          centerPadding: '40px'
         }
       }
     ]
