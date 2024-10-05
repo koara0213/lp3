@@ -79,7 +79,7 @@ li {
   font-size: 9px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .header {
     flex-direction: row;
     align-items: center;
@@ -87,10 +87,6 @@ li {
     gap: 30%;
     margin-right: 20px;
     justify-content: flex-start;
-  }
-
-  .header__logo {
-    margin-left: 13.5%;
   }
 
   .header__logo img {
@@ -134,13 +130,20 @@ li {
   }
 }
 
+@media(min-width: 1200px){
+  .header__logo {
+    margin-left: 13.5%;
+  }
+}
+
 /* Cover Section
 ------------------------------------------ */
 .cover {
   display: flex;
   background-image: url(../image/mainVisual_sp.png);
-  background-size: cover;
-  background-position-y: bottom;
+  background-size: contain;
+  background-position: bottom;
+  background-color: #fa7da3;
   width: 100%;
   padding-bottom: 5%;
   padding-top: 14%;
@@ -186,6 +189,7 @@ li {
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: rgba(0, 0, 0, 0.25) 3.54px 3.54px 0;
   padding-bottom: 19px;
+  align-self: end;
 }
 
 .cover__deal-limited {
@@ -266,17 +270,24 @@ li {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .cover__title {
+    padding-top: 0px;
+  }
+}
+
 @media (min-width: 1000px) {
   .cover {
     background-image: url(../image/mainVisual_pc.png);
     background-color: #fa7da3;
+    background-position: bottom;
     padding-bottom: 3.5%;
     margin: 0 auto;
     padding-top: 6.5%;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .cover__title {
     padding-top: 23px;
   }
@@ -355,7 +366,7 @@ li {
 
   .cover__features {
     width: calc(100% - 237px);
-    margin: 0 auto 0 0;
+    margin: 0 auto;
     margin-top: 53px;
     padding-left: 35px;
   }
@@ -709,6 +720,7 @@ li {
 
 .point__subheader {
   font-size: 18px;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -1068,6 +1080,7 @@ ul .plan__text {
 
 .course__name {
   font-size: 20px;
+  font-weight: 400;
   color: #fa7da3;
   margin-bottom: 10px;
   background-color: #fdf0f5;
@@ -1312,9 +1325,7 @@ ul .plan__text {
 /* Footer Section
 ------------------------------------------ */
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  text-align: center;
   padding: 25px 20px 30px 20px;
   background-color: #fa7da3;
 }
@@ -1328,6 +1339,7 @@ ul .plan__text {
 
   .footer__logo {
   width: 30%;
+  text-align: center;
   }
 
   @media (min-width: 768px) {
