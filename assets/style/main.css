@@ -28,17 +28,17 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 4px 10px 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
-  top: 0;
   width: 100%;
   z-index: 1000;
 }
 
 .header__logo {
-  margin-left: 1%;
+  padding-left: 12px;
 }
 
 .header__logo img {
@@ -47,17 +47,15 @@ li {
 
 .header__navigation {
   display: flex;
-  gap: 10px;
+  gap: 5px;
 }
 
 .header__link {
   padding: 10px 11px;
-  text-decoration: none;
   color: #fff;
   background-color: #fa7da3;
   border-radius: 25px;
   font-size: 12px;
-  white-space: nowrap;
 }
 
 .header__link i {
@@ -70,7 +68,7 @@ li {
   text-decoration: none;
   color: #fff;
   border-radius: 25px;
-  font-size: 11px;
+  font-size: 12px;
   white-space: nowrap;
   letter-spacing: 1.2px;
 }
@@ -189,7 +187,7 @@ li {
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: rgba(0, 0, 0, 0.25) 3.54px 3.54px 0;
   padding-bottom: 19px;
-  align-self: end;
+  padding-left: 26px;
 }
 
 .cover__deal-limited {
@@ -203,9 +201,8 @@ li {
   color: #FF69B4;
   font-weight: 700;
   background-color: #fff;
-  margin-top: 7px;
-  margin-left: 27px;
   text-align: center;
+  margin-top: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -213,8 +210,6 @@ li {
 .cover__first {
   font-size: 24px;
   color: #fff;
-  margin-left: 27px;
-  margin-top: 10px;
 }
 
 .cover__deal-price {
@@ -391,7 +386,7 @@ li {
   flex-direction: column;
   background-color: #fffedd;
   align-items: center;
-  padding-bottom: 18px;
+  padding-bottom: 10px;
   padding-top: 24px;
 }
 
@@ -401,7 +396,7 @@ li {
   align-items: center;
   margin-bottom: 18px;
   position: relative;
-  padding-left: 15px;
+  padding-left: 0px;
 }
 
 .present__catch--title {
@@ -419,26 +414,28 @@ li {
 
 .present__catch::before {
   content: "＼";
-  left: -17px;
+  left: -25px;
+  transform: rotate(15deg);
 }
 
 .present__catch::after {
   content: "／";
-  right: -17px;
+  right: -27px;
+  transform: rotate(-15deg);
 }
 
 .present__box {
   border: solid 1px #fa7da3;
   border-radius: 10px;
-  width: calc(100% - 32px);
-  margin-bottom: 7px;
+  width: calc(100% - 40px);
+  margin-bottom: 10px;
 }
 
 .present__title {
   display: flex;
   background-color: #fa7da3;
   border-radius: 9px 9px 0 0;
-  padding-top: 10px;
+  padding-top: 0px;
   padding-bottom: 10px;
   color: #fff;
   justify-content: center;
@@ -447,13 +444,14 @@ li {
 }
 
 .present__content {
-  text-align: center;
   background-color: #fff;
-  border-radius: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
   color: #fa7da3;
   font-size: 27px;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  padding-left: 13px;
 }
 
 .present__number {
@@ -467,6 +465,12 @@ li {
 }
 
 @media (min-width: 768px) {
+  .present__catch{
+    padding-top: 12px;
+    padding-right: 22px;
+    margin-bottom: 19px;
+  }
+
   .present__container {
     padding-top: 40px;
     margin-bottom: 10px;
@@ -475,7 +479,7 @@ li {
   .present__catch--title {
     font-size: 35px;
     padding-top: 9px;
-    margin-bottom: 23px;
+    margin-bottom: 3px;
     padding-left: 14px;
   }
 
@@ -483,19 +487,20 @@ li {
   .present__catch::before,
   .present__catch::after {
     position: absolute;
-    font-size: 24px;
+    font-size: 35px;
     color: #fa7da3;
+    top: 25px;
   }
 
   .present__catch::before {
     content: "＼";
-    left: -20px;
+    left: -23px;
     transform: rotate(15deg);
   }
 
   .present__catch::after {
     content: "／";
-    right: -25px;
+    right: -28px;
     transform: rotate(-15deg);
   }
 
