@@ -28,17 +28,17 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 4px 10px 8px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 1000;
 }
 
 .header__logo {
-  padding-left: 12px;
+  margin-left: 1%;
 }
 
 .header__logo img {
@@ -47,15 +47,17 @@ li {
 
 .header__navigation {
   display: flex;
-  gap: 5px;
+  gap: 10px;
 }
 
 .header__link {
   padding: 10px 11px;
+  text-decoration: none;
   color: #fff;
   background-color: #fa7da3;
   border-radius: 25px;
   font-size: 12px;
+  white-space: nowrap;
 }
 
 .header__link i {
@@ -68,7 +70,7 @@ li {
   text-decoration: none;
   color: #fff;
   border-radius: 25px;
-  font-size: 12px;
+  font-size: 11px;
   white-space: nowrap;
   letter-spacing: 1.2px;
 }
@@ -77,14 +79,9 @@ li {
   font-size: 9px;
 }
 
-@media (min-width: 1200px) {
-  .header {
-    flex-direction: row;
-    align-items: center;
-    padding: 20px 20px;
-    gap: 30%;
-    margin-right: 20px;
-    justify-content: flex-start;
+@media (min-width: 768px) {
+  .header__logo {
+    margin-left: 13.5%;
   }
 
   .header__logo img {
@@ -128,9 +125,14 @@ li {
   }
 }
 
-@media(min-width: 1200px){
-  .header__logo {
-    margin-left: 13.5%;
+@media (min-width: 1200px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 20px;
+    gap: 30%;
+    margin-right: 20px;
+    justify-content: flex-start;
   }
 }
 
@@ -187,7 +189,7 @@ li {
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: rgba(0, 0, 0, 0.25) 3.54px 3.54px 0;
   padding-bottom: 19px;
-  padding-left: 26px;
+  align-self: end;
 }
 
 .cover__deal-limited {
@@ -201,8 +203,9 @@ li {
   color: #FF69B4;
   font-weight: 700;
   background-color: #fff;
+  margin-top: 7px;
+  margin-left: 27px;
   text-align: center;
-  margin-top: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -210,6 +213,8 @@ li {
 .cover__first {
   font-size: 24px;
   color: #fff;
+  margin-left: 27px;
+  margin-top: 10px;
 }
 
 .cover__deal-price {
@@ -295,8 +300,8 @@ li {
   }
 
   .cover__sub {
-    justify-content: end;
-    flex-direction; row;
+    align-self: end;
+    flex-direction: row;
     font-size: 33px;
     padding: 19px 14px 10px 10px;
   }
@@ -308,6 +313,7 @@ li {
   .cover__deal {
     margin-left: 5%;
     padding-bottom: 6%;
+    align-self: flex-start;
   }
 
   .cover__deal-limited {
@@ -361,7 +367,7 @@ li {
 
   .cover__features {
     width: calc(100% - 237px);
-    margin: 0 auto;
+    margin: 0 auto 0 0;
     margin-top: 53px;
     padding-left: 35px;
   }
