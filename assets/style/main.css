@@ -591,7 +591,7 @@ li {
 
 @media (min-width: 768px) {
   .reservation {
-    padding: 40px;
+    padding: 40px 40px 32px 40px;
   }
 
   .reservation__text {
@@ -623,61 +623,89 @@ li {
 ------------------------------------------ */
 .trial {
   margin: auto;
-  width: calc(100% - 32px);
+  width: calc(100% - 40px);
 }
 
 .trial__title {
   text-align: center;
-  padding: 15px;
+  padding: 11px;
   background-color: #fff;
   border-top: 1px solid #50bfff;
   border-bottom: 1px solid #50bfff;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 13px;
 }
 
 .trial__title h2 {
   color: #50bfff;
   font-size: 17px;
   font-weight: 600;
+  letter-spacing: 1.6px;
 }
 
 .trial__content {
   color: #333;
   font-size: 14px;
   line-height: 1.5;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .trial__content h3 {
   display: inline;
   font-weight: 400;
   font-size: 14px;
+  margin-left: 2px;
+  padding-top: 2px;
 }
 
 .trial__content p {
   display: inline;
   font-weight: 400;
   font-size: 14px;
+  line-height: 1.65;
+  margin-left: -4px;
+  padding-top: 3px;
 }
 
 .trial__content-unit {
   font-size: 11px;
+  letter-spacing: -0.25px;
+}
+
+@media (min-width: 570px) {
+  .trial{
+    max-width: 570px;
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
   .trial {
     margin: auto;
-    width: 100%;
-    max-width: 570px;
-    margin-top: 6px;
+    /* width: 100%; */
+    /* max-width: 570px; */
+    margin-top: 0px;
   }
 
   .trial__title {
     font-size: 28px;
-    padding: 18px;
-    margin-bottom: 15px;
+    padding: 14px 14px  22px 14px;
+    margin-bottom: 0px;
     letter-spacing: 2px;
     padding-right: 16px;
+  }
+
+  .trial__title h2{
+    font-size: 28px;
+  }
+
+  .trial__content h3{
+    font-size: 22px;
+    margin-left: 0px;
+  }
+
+  .trial__content p{
+    font-size: 22px;
   }
 
   .trial__content {
@@ -686,10 +714,11 @@ li {
     margin-bottom: 52px;
     padding-left: 0px;
     letter-spacing: 0.4px;
+    margin-top: 16px;
   }
 
   .trial__content-unit {
-    font-size: 16.5px;
+    font-size: 17.5px;
   }
 
 }
@@ -699,13 +728,13 @@ li {
 .points {
   text-align: center;
   background-color: #fdf1f5;
-  padding: 20px 20px 1px 20px;
+  padding: 40px 20px 1px 20px;
 }
 
 .points__title {
   font-size: 18px;
   color: #4d2b1b;
-  margin-bottom: 20px;
+  margin-bottom: 11px;
   font-weight: 500;
   display: flex;
   justify-content: center;
@@ -722,20 +751,19 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 32px;
   color: #FF69B4;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  letter-spacing: 1.5px;
 }
 
 .points__star--left {
-  width: 20px;
-  margin-right: 10px;
+  width: 36px;
 }
 
 .points__star--right {
-  width: 20px;
-  margin-left: 10px;
+  width: 36px;
 }
 
 .point__box {
@@ -757,6 +785,7 @@ li {
   font-size: 18px;
   font-weight: 400;
   color: #fff;
+  letter-spacing: 1.1px;
 }
 
 .point__description {
