@@ -189,7 +189,8 @@ li {
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: rgba(0, 0, 0, 0.25) 3.54px 3.54px 0;
   padding-bottom: 19px;
-  align-self: end;
+  align-self: flex-start;
+  width: 100%;
 }
 
 .cover__deal-limited {
@@ -294,7 +295,7 @@ li {
 
   .cover__main {
     display:flex;
-    justify-content: end;;
+    justify-content: end;
     font-size: 119px;
     padding: 0px 12px;
   }
@@ -314,6 +315,7 @@ li {
     margin-left: 5%;
     padding-bottom: 6%;
     align-self: flex-start;
+    width: unset;
   }
 
   .cover__deal-limited {
@@ -1003,7 +1005,7 @@ ul .plan__text {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  paddin-top: 9px;
+  padding-top: 9px;
 }
 
 .point__option img {
@@ -1395,7 +1397,7 @@ ul .plan__text {
 ------------------------------------------ */
 .customer {
   text-align: center;
-  padding: 20px 0px;
+  padding: 20px 0px 35px 0px;
   background-color: #fbeff5;
 }
 
@@ -1404,6 +1406,7 @@ ul .plan__text {
   align-items: center;
   justify-content: center;
   margin-top: 7px;
+  margin-bottom: 22px;
   gap: 18px;
 }
 
@@ -1419,12 +1422,14 @@ ul .plan__text {
 }
 
 .customer__slide {
-  width: calc(350px - 10px);
+  width: 310px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   border-radius: 8px;
-  margin: 20px 15px;
+  /* margin: 20px 15px; */
+  margin: 0 5px;
 }
 
 .customer__imgA,
@@ -1490,6 +1495,7 @@ ul .plan__text {
   justify-content: center;
   list-style: none;
   padding: 0;
+  margin-top: 13px;
 }
 
 .slick-dots li {
@@ -1516,12 +1522,16 @@ ul .plan__text {
 }
 
 @media (min-width: 768px) {
+  .customer{
+    padding: 20px 0px 28px 0px;
+  }
+
   .customer__slider {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width:100%;
-    max-width: 1030px;
+    max-width: 968px;
     margin: auto;
   }
 
@@ -1531,12 +1541,17 @@ ul .plan__text {
   }
 
   .customer--voice__image {
-    /* width: 120px; */
+    width: 100%;
   }
 
   .customer__title {
     font-size: 42px;
-    margin-top: 23px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .customer__title h2{
+      font-size: 42px;
   }
 
   .customer__star--left,
@@ -1553,29 +1568,40 @@ ul .plan__text {
     right: -10px;
   }
 
-  .customer__imgA {
-    width: 85%;
-  }
+  /* .customer__imgA {
+    width: 67%;
+  } */
 
-  .customer__imgB {
-    width: 73%;
-  }
+  /* .customer__imgB {
+    width: 60%;
+  } */
 
-  .customer__imgC {
-    width: 57%;
-  }
+  /* .customer__imgC {
+    width: 48%;
+  } */
 
 .slick-dots {
   position: relative;
-  bottom: -20px;
+  bottom: 0px;
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
   list-style: none;
   padding: 0;
   margin-bottom: 20px;
 }
 
+.slick-dots button{
+  width: 16px;
+  height: 16px;
+}
+
+}
+
+@media(min-width: 768px){
+  .reservation.res--footer{
+    padding-top: 37px;
+  }
 }
 
 /* Footer Section

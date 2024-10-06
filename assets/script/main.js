@@ -6,15 +6,19 @@ $(document).ready(function(){
     slidesToScroll: 3,
     dots: true,
     arrows: false,
+    variableWidth: false,
+    centerMode: false,
+    centerPadding: '60px',
     responsive: [
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerPadding: '40px',
+          variableWidth: true,
           centerMode: true,
-          centerPadding: '40px'
-        }
+              }
       }
     ]
   });
