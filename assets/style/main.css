@@ -684,8 +684,6 @@ li {
 @media (min-width: 768px) {
   .trial {
     margin: auto;
-    /* width: 100%; */
-    /* max-width: 570px; */
     margin-top: 0px;
   }
 
@@ -1428,7 +1426,6 @@ ul .plan__text {
   align-items: center;
   justify-content: space-between;
   border-radius: 8px;
-  /* margin: 20px 15px; */
   margin: 0 5px;
 }
 
@@ -1567,18 +1564,6 @@ ul .plan__text {
   .customer__star--right {
     right: -10px;
   }
-
-  /* .customer__imgA {
-    width: 67%;
-  } */
-
-  /* .customer__imgB {
-    width: 60%;
-  } */
-
-  /* .customer__imgC {
-    width: 48%;
-  } */
 
 .slick-dots {
   position: relative;
