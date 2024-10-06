@@ -1598,9 +1598,17 @@ ul .plan__text {
 
 }
 
-@media(min-width: 768px){
+/* Reservation Section(Footer)
+------------------------------------------ */
+.reservation.res--footer{
+  padding-top: 18px;
+  padding-bottom: 40px;
+}
+
+  @media(min-width: 768px){
   .reservation.res--footer{
-    padding-top: 37px;
+    padding-top: 31px;
+    padding-bottom: 65px;
   }
 }
 
@@ -1608,25 +1616,25 @@ ul .plan__text {
 ------------------------------------------ */
 .footer {
   text-align: center;
-  padding: 25px 20px 30px 20px;
+  padding: 17px 20px 30px 20px;
   background-color: #fa7da3;
 }
 
   @media (min-width: 768px) {
   .footer {
     flex-direction: row;
-    padding: 40px 100px 40px 100px;
+    padding: 27px 100px 40px 105px;
   }
 }
 
   .footer__logo {
-  width: 30%;
+  width: 20%;
   text-align: center;
   }
 
   @media (min-width: 768px) {
   .footer__logo {
     margin-bottom: 0;
-    width: 20%;
+    width: 12%;
   }
 }
