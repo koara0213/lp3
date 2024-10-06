@@ -491,7 +491,6 @@ li {
     padding-left: 14px;
   }
 
-
   .present__catch::before,
   .present__catch::after {
     position: absolute;
@@ -805,7 +804,6 @@ li {
   padding-left: 6px;
   padding-right: 0px;
 }
-
 
 .point__description {
   font-size: 13px;
